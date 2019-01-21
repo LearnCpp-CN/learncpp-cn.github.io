@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="罗传月武">
+        <link rel="canonical" href="https://learncpp-cn.github.io/0-Introduction&Getting Started/0.2-Introduction to programming languages/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>0.2-编程语言简介 - LearnCpp中文版</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82042025-2', 'learncpp-cn.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LearnCpp中文版</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">主页</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第0章-简介/入门</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../0.1-Introduction to these tutorials/">0.1-教程简介</a>
+</li>
+            
+<li class="active">
+    <a href="./">0.2-编程语言简介</a>
+</li>
+            
+<li >
+    <a href="../0.3-Introduction to C C++/">0.3-C/C++简介</a>
+</li>
+            
+<li >
+    <a href="../0.4-Introduction to C++ development/">0.4-C++开发简介</a>
+</li>
+            
+<li >
+    <a href="../0.5-Introduction to the compiler, linker, and libraries/">0.5-编译器，链接器和库简介</a>
+</li>
+            
+<li >
+    <a href="../0.6-Installing an Integrated Development Environment (IDE)/">0.6-安装集成开发环境(IDE)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第1章-C++基础知识</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../1-C++ Basics/1.1-Structure of a program/">1.1-程序的结构</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第7章-函数</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../7-Functions/7.5-Inline functions/">7.5-内联函数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第8章- 面向对象编程基础</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../8-Basic object-oriented programming/8.3-Public vs private access specifiers/">8.3-公有私有访问修饰符</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about.md">关于中文翻译</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../0.1-Introduction to these tutorials/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../0.3-Introduction to C C++/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">编程语言介绍</a></li>
+            <li><a href="#_2">机器语言</a></li>
+            <li><a href="#_3">汇编语言</a></li>
+            <li><a href="#_4">高级语言</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="_1">编程语言介绍</h2>
+<p>如今的计算机速度极快，而且速度越来越快。然而，即便有如此快的速度，它依然存在一些重要的制约因素：计算机本身只能理解一组非常有限的命令，你必须准确地告诉它做什么，它才会做什么。</p>
+<p><strong>计算机程序</strong>（通常也被称为<strong>应用程序</strong>）是一组可以让计算机执行一些任务的指令。创建程序的过程称为编程。程序员通常通过书写源代码（通常缩写为代码）来创建程序，源代码是键入一个或多个文本文件内的命令列表。</p>
+<p>组成计算机和执行程序的物理计算机部件的集合称为硬件。计算机程序被加载到内存中，硬件按顺序执行每个指令，这就称为运行或执行程序。</p>
+<h3 id="_2">机器语言</h3>
+<p>计算机的CPU无法理解C++。CPU可以直接理解的有限指令集称为机器代码（或机器语言或<strong>指令集</strong>）。</p>
+<p>这是一个机器语言指令的例子： 10110000 01100001</p>
+<p>当计算机最初发明时，程序员必须直接用机器语言编写程序，这是一件非常困难和耗时的事情。</p>
+<p>如何组织这些指令超出了本介绍的范围，但有两点需要注意。首先，每条指令由1和0的序列组成。每个单独的0或1称为<strong>二进制数字</strong>，或简称为<strong>位</strong>。组成单个命令的位数会有所不同 -- 例如，某些CPU只会处理32位长的指令，而某些其他CPU（例如x86系列）具有长度可变的指令。</p>
+<p>其次，每组二进制数字由CPU解释为执行特定工作的命令，例如这两个数字的比较，或将此数字放在该内存位置。但是，由于不同的CPU具有不同的指令集，因此不能在不共享相同指令集的CPU上使用为一种CPU类型编写的指令。这意味着程序通常<strong>不可移植</strong>（如果没有进行大返工的前提下）用于不同类型的系统，并且必须重新编写。</p>
+<h3 id="_3">汇编语言</h3>
+<p>因为机器语言对人类来说很难阅读和理解，所以发明了汇编语言。在汇编语言中，每个指令由短缩写（而不是一组位）标识，并且可以使用名称和其他数字。</p>
+<p>这是一个与上述指令相同但用汇编语言描述的例子： mov al, 061h</p>
+<p>这使得汇编比机器语言更容易读取和写入。但是，CPU无法直接理解汇编语言。相反，必须先将汇编程序翻译成机器语言，然后才能由计算机执行。这是通过使用称为汇编器（assembler）的程序完成的。用汇编语言编写的程序往往非常快，而如今，在速度至关重要的情况下，还是会有人使用汇编语言。</p>
+<p>但是，汇编语言仍有一些缺点。首先，汇编语言仍需要大量指令来完成简单的任务。虽然单个指令本身在某种程度上是人类可读的，但了解整个程序正在做什么就比较难了（这有点像试图通过单独查看每个字母来理解句子）。其次，汇编语言的可移植性仍然不够 -- 使用汇编语言为一种CPU类型编写的程序不能在其他使用不同指令集的硬件上运行。并且必须重写或进行大量修改。</p>
+<h3 id="_4">高级语言</h3>
+<p>为了解决可读性和可移植性问题，一些新的编程语言，如C，C++，Pascal（以及后来的Java，Javascript和Perl等语言）出现了。这些语言被称为<strong>高级语言</strong>，因为它们旨在允许程序员编写程序而无需关心程序将运行在何种类型的计算机上。</p>
+<p>这儿同样是与上述相同的指令但用高级语言描述的例子： a = 97;</p>
+<p>与汇编程序非常相似，用高级语言编写的程序必须翻译成计算机可以运行的格式才能运行。这有两种主要方式：编译和解释。</p>
+<p><strong>编译器</strong>是一个程序，可以读取源代码，并生成一个独立的可执行程序。将代码转换为可执行文件后，您无需编译器即可运行该程序。最初，编译器不够强大，生成的都是缓慢且未经优化过的代码。然而，这么多年过来了，编译器已经非常擅长生成快速、经过优化的代码，并且在某些情况下可以比人类在汇编语言方面做得更好！</p>
+<p>以下是编译过程的简化表示：</p>
+<p><img alt="编译例子" src="https://www.learncpp.com/images/CppTutorial/Chapter0/Compiling-min.png" /></p>
+<p>由于C++程序通常是需要编译的，因此我们将在稍后详细介绍编译器。</p>
+<p><strong>解释器</strong>是直接执行在源代码中的指令，而不需要他们首先被编译成可执行的程序。解释器往往比编译器更灵活，但在运行程序时效率较低，因为每次运行程序时都需要完成解释过程。这意味着每次运行程序时都需要解释器。</p>
+<p>以下是解释过程的简化表示：</p>
+<p><img alt="解释例子" src="https://www.learncpp.com/images/CppTutorial/Chapter0/Interpreting-min.png" /></p>
+<p>可以在<a href="https://stackoverflow.com/questions/38491212/difference-between-compiled-and-interpreted-languages/38491646#38491646">此处</a>查看对编译器与解释器的优缺点的详细比较（可选阅读）</p>
+<p>大多数语言都可以被编译或解释，但是，传统语言如C，C++和Pascal是需要编译的，而像Perl和Javascript这样的“脚本”语言往往需要被解释。有些语言，比如Java，混合使用了两种方法。</p>
+<p>高级语言有许多可取的特性</p>
+<p>首先，高级语言更容易读写，因为命令更接近我们每天使用的自然语言。</p>
+<p>其次，高级语言需要较少的指令来执行与低级语言相同的任务，使程序更简洁，更容易理解。在C++中，您可以a = b * 2 + 5;在一行中执行某些操作。在汇编语言中，这将需要5或6个不同的指令。</p>
+<p>第三，高级语言写的程序可以在很多不同的平台被编译/解释，你不需要通过修改程序来让它运行在不同的PUC（你只需要为那个Cpu重新编译）。举个例子：</p>
+<p><img alt="可移植性的例子" src="https://www.learncpp.com/images/CppTutorial/Chapter0/Portability-min.png" /></p>
+<p>可移植性有两个常见的例外。首先，许多操作系统（如Microsoft Windows）提供很多平台特有代码（platform-specific functions）供你在代码中使用，这些平台特有代码可以使编写特定操作系统的程序变得更加容易，但代价是可移植性。在这些教程中，我们将避免使用任何平台特有代码</p>
+<p>某些编译器还支持特定于编译器的扩展 - 如果您使用这些扩展，您的程序将无法由其他不支持相同扩展的编译器编译而无需修改。一旦安装了编译器，我们稍后会详细讨论这些内容。</p>
+<p>有些编译器支持特定编译器拓展 -- 如果你使用了它，你的程序就不能被其他编译器编译，除非其他编译器支持同样的编辑器拓展，我们会在之后教你安装编译器的时候再来讨论这一点。</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>翻译（罗传月武）原文（Alex）</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

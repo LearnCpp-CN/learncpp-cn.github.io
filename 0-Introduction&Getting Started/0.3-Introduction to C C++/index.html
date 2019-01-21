@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="罗传月武">
+        <link rel="canonical" href="https://learncpp-cn.github.io/0-Introduction&Getting Started/0.3-Introduction to C C++/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>0.3-C/C++简介 - LearnCpp中文版</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82042025-2', 'learncpp-cn.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LearnCpp中文版</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">主页</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第0章-简介/入门</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../0.1-Introduction to these tutorials/">0.1-教程简介</a>
+</li>
+            
+<li >
+    <a href="../0.2-Introduction to programming languages/">0.2-编程语言简介</a>
+</li>
+            
+<li class="active">
+    <a href="./">0.3-C/C++简介</a>
+</li>
+            
+<li >
+    <a href="../0.4-Introduction to C++ development/">0.4-C++开发简介</a>
+</li>
+            
+<li >
+    <a href="../0.5-Introduction to the compiler, linker, and libraries/">0.5-编译器，链接器和库简介</a>
+</li>
+            
+<li >
+    <a href="../0.6-Installing an Integrated Development Environment (IDE)/">0.6-安装集成开发环境(IDE)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第1章-C++基础知识</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../1-C++ Basics/1.1-Structure of a program/">1.1-程序的结构</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第7章-函数</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../7-Functions/7.5-Inline functions/">7.5-内联函数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第8章- 面向对象编程基础</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../8-Basic object-oriented programming/8.3-Public vs private access specifiers/">8.3-公有私有访问修饰符</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about.md">关于中文翻译</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../0.2-Introduction to programming languages/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../0.4-Introduction to C++ development/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#cc">在C++之前是C语言</a></li>
+        <li class="main "><a href="#c">C++</a></li>
+        <li class="main "><a href="#cc_1">C和C++的哲学</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h3 id="cc">在C++之前是C语言</h3>
+<p>C语言由贝尔电话实验室的Dennis Ritchie于1972年开发，主要用作系统编程语言（用于编写操作系统的语言）。Ritchie的主要目标是生成一种易于编译的简约语言，允许有效访问内存，生成高效代码，并且是独立的（不依赖于其他程序）。对于高级语言，它旨在为程序员提供大量控制，同时仍然鼓励平台（硬件和操作系统）独立（即，不必为每个平台重写代码）。</p>
+<p>C最终变得如此高效和灵活，以至于1973年，Ritchie和Ken Thompson使用C重写了大部分UNIX操作系统。许多以前的操作系统都是用汇编语言编写的。与仅生成只能在特定CPU上运行的程序的程序集不同，C具有出色的可移植性，允许在许多不同类型的计算机上轻松地重新编译UNIX并加速其采用。C和Unix的命运联系在一起，而C的受欢迎程度部分与UNIX作为操作系统的成功有关。</p>
+<p>1978年，Brian Kernighan和Dennis Ritchie出版了一本名为“The C Programming Language”的书。这本书通常被称为K＆R（在作者的姓氏之后），提供了该语言的非正式规范，并成为事实上的标准。当需要最大的可移植性时，程序员会坚持K＆R中的建议，因为当时大多数编译器都是按照K＆R标准实现的。</p>
+<p>1983年，美国国家标准协会（ANSI）成立了一个委员会来建立C的正式标准。在1989年（委员会啥都做呀~），他们完成并发布了C89标准，通常称为ANSI C. 1990年，国际标准化组织（ISO）采用ANSI C（稍作修改的版本）。这个版本的C被称为C90。编译器最终符合ANSI C / C90标准，并且希望最大可移植性的程序被编码为此标准。</p>
+<p>1999年，ANSI委员会发布了一个名为C99的新版C语言。C99采用了许多功能，这些功能已经作为扩展进入编译器，或者已经在C++中实现。</p>
+<h3 id="c">C++</h3>
+<p>C++（发音为see plus plus）由Bjarne Stroustrup在贝尔实验室开发，作为C的扩展，从1979年开始。C++为C语言添加了许多新功能，也许最好被认为是C的超集，尽管这是并非完全正确（因为C99引入了一些C++中不存在的功能）。C++声名鹊起的主要原因在于它是一种面向对象的语言。至于对象是什么以及它与传统编程方法的区别，我们将在第8章（面向对象编程基础）中介绍它。</p>
+<p>C++于1998年由ISO委员会批准，并于2003年再次批准（称为C++ 03）。自那时起，C++语言（C++ 11，C++ 14和C++ 17，在2011年，2014年和2017年得到批准）的三个主要更新已经完成，为该语言添加了额外的功能。特别是C++ 11为该语言添加了大量新功能。这些更新中的一些相关功能将在这些教程中讨论。该语言的未来更新正在积极考虑之中。</p>
+<h3 id="cc_1">C和C++的哲学</h3>
+<p>C和C++的基本设计理念可以概括为“信任程序员” - 既美妙又危险。C++旨在让程序员可以高度自由地完成他们想要的任务。然而，这也意味着语言通常不会阻止你做一些没有意义的事情，因为它会假设你因为某些原因而无法理解。如果没有意识到，新程序员可能会陷入相当多的陷阱。这是<strong>“知道如何正确使用C++和不该怎么用C++编程两者同等重要”</strong>的原因之一。</p>
+<p><strong>问：C++擅长什么？</strong></p>
+<p>C++在需要高性能和精确控制内存和其他资源的情况下表现出色。以下是一些常见的应用程序类型，最有可能用C++编写：</p>
+<ul>
+<li>视频游戏</li>
+<li>实时系统（例如运输，制造等......）</li>
+<li>高性能金融应用（例如高频交易）</li>
+<li>图形应用程序和模拟</li>
+<li>生产力/办公应用</li>
+<li>嵌入式软件</li>
+<li>音视频处理</li>
+</ul>
+<p><strong>问：在进行这些教程之前，我是否需要了解C？</strong></p>
+<p>不需要！从C++开始是完美的，我们会教你一路上需要知道的一切（包括要避免的坑）。</p>
+<p>一旦你了解了C++，如果你有需要，学习标准C应该很容易。目前，C主要用于小众用例：在嵌入式设备上运行代码，以及与只支持C的代码打交道的时候......大多数情况下，建议使用C++。</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>翻译（罗传月武）原文（Alex）</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

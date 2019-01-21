@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="http://www.learncpp.com 系列教程的简体中文翻译">
+        <meta name="author" content="罗传月武">
+        <link rel="canonical" href="https://learncpp-cn.github.io/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>LearnCpp中文版</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82042025-2', 'learncpp-cn.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">LearnCpp中文版</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">主页</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第0章-简介/入门</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="0-Introduction&Getting Started/0.1-Introduction to these tutorials/">0.1-教程简介</a>
+</li>
+            
+<li >
+    <a href="0-Introduction&Getting Started/0.2-Introduction to programming languages/">0.2-编程语言简介</a>
+</li>
+            
+<li >
+    <a href="0-Introduction&Getting Started/0.3-Introduction to C C++/">0.3-C/C++简介</a>
+</li>
+            
+<li >
+    <a href="0-Introduction&Getting Started/0.4-Introduction to C++ development/">0.4-C++开发简介</a>
+</li>
+            
+<li >
+    <a href="0-Introduction&Getting Started/0.5-Introduction to the compiler, linker, and libraries/">0.5-编译器，链接器和库简介</a>
+</li>
+            
+<li >
+    <a href="0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/">0.6-安装集成开发环境(IDE)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第1章-C++基础知识</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="1-C++ Basics/1.1-Structure of a program/">1.1-程序的结构</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第7章-函数</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="7-Functions/7.5-Inline functions/">7.5-内联函数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第8章- 面向对象编程基础</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="8-Basic object-oriented programming/8.3-Public vs private access specifiers/">8.3-公有私有访问修饰符</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="about.md">关于中文翻译</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="0-Introduction&Getting Started/0.1-Introduction to these tutorials/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#0">第0章 简介/入门</a></li>
+        <li class="main "><a href="#1-c">第1章 C++基础知识</a></li>
+        <li class="main "><a href="#2">第2章 变量和基本数据类型</a></li>
+        <li class="main "><a href="#3">第3章 操作符</a></li>
+        <li class="main "><a href="#4">第4章 可变范围和更多类型</a></li>
+        <li class="main "><a href="#5">第5章 控制流</a></li>
+        <li class="main "><a href="#6">第6章 数组，字符串，指针和引用</a></li>
+        <li class="main "><a href="#7">第7章 函数</a></li>
+        <li class="main "><a href="#8">第8章 基本的面向对象编程</a></li>
+        <li class="main "><a href="#9">第9章 运算符重载</a></li>
+        <li class="main "><a href="#10">第10章 对象关系的介绍</a></li>
+        <li class="main "><a href="#11">第11章 继承</a></li>
+        <li class="main "><a href="#12">第12章  虚函数</a></li>
+        <li class="main "><a href="#13">第13章   模板</a></li>
+        <li class="main "><a href="#14">第14章   异常</a></li>
+        <li class="main "><a href="#15">第15章   移动语义和智能指针</a></li>
+        <li class="main "><a href="#16">第16章   标准模板库</a></li>
+        <li class="main "><a href="#17-stdstring">第17章   std::string</a></li>
+        <li class="main "><a href="#18-io">第18章 输入输出（I/O）</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>LearnCpp.com是一个致力于教你如何用C++编程。这里是LearnCpp教程的中文翻译。由于翻译可能无法做到精确表达原文意思，我们推荐您在对问题有疑惑的时候去阅读一下英文版的教程。如果您对翻译有更好的建议，可以在评论区提出，如果是对教程的内容有问题，请先查看原文，如果不是翻译错误的话，请直接在原网站评论区向作者（ALEX ）反馈。我会根据个人时间不定期更新和校对。</p>
+<p>无论您是否有任何先前的编程经验，本网站上的教程将指导您完成编写，编译和调试C++程序的所有步骤，所有这些都包含大量示例。</p>
+<p>成为专家不是一夜之间的事情。但只要多一点耐心，你一定会成功的！本网站将为您指明方向。</p>
+<h3 id="0">第0章 简介/入门</h3>
+<p><a href="0-Introduction&amp;Getting Started/0.1-Introduction to these tutorials/">0.1     教程简介</a></p>
+<p><a href="0-Introduction&amp;Getting Started/0.2-Introduction to programming languages/">0.2     编程语言简介</a></p>
+<p><a href="0-Introduction&amp;Getting Started/0.3-Introduction to C C++/">0.3     C/C++简介</a></p>
+<p><a href="0-Introduction&amp;Getting Started/0.4-Introduction to C++ development/">0.4     C++开发简介</a></p>
+<p><a href="0-Introduction&amp;Getting Started/0.5-Introduction to the compiler, linker, and libraries/">0.5     编译器、链接器和库</a></p>
+<p><a href="0-Introduction&amp;Getting Started/0.6-Installing an Integrated Development Environment (IDE)/">0.6     安装集成开发环境（IDE）</a></p>
+<p>0.7     编译你的第一个程序</p>
+<p>0.8     C++常见问题</p>
+<p>0.9     编译器配置：构建配置（Build configurations）</p>
+<p>0.10    编译器配置：编译器拓展</p>
+<p>0.11    编译器配置：警告和错误等级</p>
+<h3 id="1-c">第1章 C++基础知识</h3>
+<p><a href="1-C++ Basics/1.1-Structure of a program/">1.1     程序的结构</a></p>
+<p><a href="1-C++ Basics/1.2-Comments/">1.2     注释</a></p>
+<p>1.3     初识变量，初始化和赋值</p>
+<p>1.3A    初识cout，cin和endl</p>
+<p>1.4     初识函数和返回值</p>
+<p>1.4A    初识函数形参和实参</p>
+<p>1.4B    为什么函数有用，以及如何有效地使用它们</p>
+<p>1.4C    关键字和命名标识符</p>
+<p>1.4D    初识局部作用域</p>
+<p>1.5     初识操作符</p>
+<p>1.6     空格和格式化基础</p>
+<p>1.7     向前声明和定义</p>
+<p>1.8     包含多个文件的程序</p>
+<p>1.8A    命名冲突和std命名空间</p>
+<p>1.9     头文件</p>
+<p>1.10    初识预处理器</p>
+<p>1.10A   头文件保护(Header Guard)</p>
+<p>1.10B   如何设计你的第一个程序</p>
+<p>1.11    调试程序（步进和断点）</p>
+<p>1.11a   调试程序（观察变量和调用堆栈）</p>
+<p>1.12    第1章综合测验</p>
+<h3 id="2">第2章 变量和基本数据类型</h3>
+<p>2.1     基本变量定义，初始化和赋值</p>
+<p>2.2     void</p>
+<p>2.3     可变大小和sizeof运算符</p>
+<p>2.4     整型</p>
+<p>2.4A    固定宽度整数</p>
+<p>2.5     浮点数字</p>
+<p>2.6     布尔值和if语句简介</p>
+<p>2.7     字符</p>
+<p>2.8     字面值</p>
+<p>2.9     Const，constexpr和符号常量</p>
+<p>2.10    第2章综合测验</p>
+<h3 id="3">第3章 操作符</h3>
+<p>3.1     运算符优先级和关联性</p>
+<p>3.2     算术运算符</p>
+<p>3.3     递增/递减运算符以及它的副作用</p>
+<p>3.4     sizeof，逗号和条件运算符</p>
+<p>3.5     关系运算符（比较）</p>
+<p>3.6     逻辑运算符</p>
+<p>3.7     在二进制和十进制之间转换</p>
+<p>3.8     按位运算符</p>
+<p>3.8A    位标志和位掩码</p>
+<p>3.X     第3章综合测验</p>
+<h3 id="4">第4章 可变范围和更多类型</h3>
+<p>4.1     块语句（复合语句）</p>
+<p>4.1A    局部变量，作用域和生存周期</p>
+<p>4.2     全局变量和链接（Linkage）</p>
+<p>4.2A    为什么全局变量不好</p>
+<p>4.3     静态生存周期变量</p>
+<p>4.3A    作用域，生存周期和链接（Linkage）摘要</p>
+<p>4.3B    命名空间</p>
+<p>4.3c    using语句</p>
+<p>4.4     隐式类型转换</p>
+<p>4.4A    显式类型转换</p>
+<p>4.4B    std::string简介</p>
+<p>4.5     枚举类型</p>
+<p>4.5A    枚举类</p>
+<p>4.6     Typedef和类型别名</p>
+<p>4.7     结构体</p>
+<p>4.8     auto关键字</p>
+<p>4.x版    第4章综合测验</p>
+<h3 id="5">第5章 控制流</h3>
+<p>5.1     流程控制介绍</p>
+<p>5.2     if语句</p>
+<p>5.3     switch语句</p>
+<p>5.4     goto语句</p>
+<p>5.5     while语句</p>
+<p>5.6     do whille语句</p>
+<p>5.7     for语句</p>
+<p>5.8     break和continue</p>
+<p>5.9     随机数生成</p>
+<p>5.10    std::cin，提取和处理无效的文本输入</p>
+<p>5.11    代码测试简介</p>
+<p>5.x     第五章综合测验</p>
+<h3 id="6">第6章 数组，字符串，指针和引用</h3>
+<p>6.1     数组（第一部分）</p>
+<p>6.2     数组（第二部分）</p>
+<p>6.3     数组和循环</p>
+<p>6.4     使用选择排序对数组进行排序</p>
+<p>6.5     多维数组</p>
+<p>6.6     C风格的字符串</p>
+<p>6.7     指针简介</p>
+<p>6.7A    空指针</p>
+<p>6.8     指针和数组</p>
+<p>6.8A    指针算术和数组索引</p>
+<p>6.8b    C风格的字符串符号常量</p>
+<p>6.9     使用new和delete进行动态内存分配</p>
+<p>6.9a    动态分配数组</p>
+<p>6.10    指针和常量</p>
+<p>6.11    引用变量</p>
+<p>6.11A   引用和常量</p>
+<p>6.12    使用指针和引用选择成员</p>
+<p>6.12a   foreach循环</p>
+<p>6.13    void指针</p>
+<p>6.14    指针的指针和动态多维数组的指针</p>
+<p>6.15    std::array简介</p>
+<p>6.16    std::vector简介</p>
+<p>6.x     第6章综合测验</p>
+<h3 id="7">第7章 函数</h3>
+<p>7.1     函数行参和实参</p>
+<p>7.2     按值传递参数</p>
+<p>7.3     通过引用传递参数</p>
+<p>7.4     通过地址传递参数</p>
+<p>7.4A    按值，引用和地址返回值</p>
+<p>7.5     内联函数</p>
+<p>7.6     函数重载</p>
+<p>7.7     默认参数</p>
+<p>7.8     函数指针</p>
+<p>7.9     栈和堆</p>
+<p>7.10    std::vector容量和堆栈行为</p>
+<p>7.11    递归</p>
+<p>7.12    处理errors，cerr和exit</p>
+<p>7.12a   断言和static_assert</p>
+<p>7.13    命令行参数</p>
+<p>7.14    省略号（以及为什么要避免它们）</p>
+<p>7.x     第7章综合测验</p>
+<h3 id="8">第8章 基本的面向对象编程</h3>
+<p><a href="8-Basic object-oriented programming/8.1-Welcome to object-oriented programming/">8.1    欢迎使用面向对象的编程</a></p>
+<p>8.2     类和类成员</p>
+<p>8.3     公共与私有访问修饰符</p>
+<p>8.4     访问函数与封装</p>
+<p>8.5     构造函数</p>
+<p>8.5A    构造函数成员初始化列表</p>
+<p>8.5b    非静态成员初始化</p>
+<p>8.6     重叠构造函数和委托构造函数</p>
+<p>8.7     析构函数</p>
+<p>8.8     隐藏的“this”指针</p>
+<p>8.9     类代码和头文件</p>
+<p>8.10    Const类对象和成员函数</p>
+<p>8.11    静态成员变量</p>
+<p>8.12    静态成员函数</p>
+<p>8.13    友元函数和类</p>
+<p>8.14    匿名对象</p>
+<p>8.15    类中的嵌套类型</p>
+<p>8.16    代码计时</p>
+<p>8.x     第8章综合测验</p>
+<h3 id="9">第9章 运算符重载</h3>
+<p>9.1     运算符重载简介</p>
+<p>9.2     使用友元函数重载算术运算符</p>
+<p>9.2A    使用常规函数重载运算符</p>
+<p>9.3     重载I/O运算符</p>
+<p>9.4     使用成员函数重载运算符</p>
+<p>9.5     重载一元运算符+， - 和！</p>
+<p>9.6     重载比较运算符</p>
+<p>9.7     重载递增和递减运算符</p>
+<p>9.8     重载下标运算符</p>
+<p>9.9     重载括号运算符</p>
+<p>9.10    重载类型转换</p>
+<p>9.11    复制构造函数</p>
+<p>9.12    复制初始化</p>
+<p>9.13    转换构造函数，显式和删除</p>
+<p>9.14    重载赋值运算符</p>
+<p>9.15    浅复制与深复制</p>
+<p>9.x     第9章综合测验</p>
+<h3 id="10">第10章 对象关系的介绍</h3>
+<p>10.1    对象关系</p>
+<p>10.2    组合</p>
+<p>10.3    聚合</p>
+<p>10.4    关联</p>
+<p>10.5    依赖</p>
+<p>10.6    容器类</p>
+<p>10.7    std::initializer_list</p>
+<p>10.x    第10章综合测验</p>
+<h3 id="11">第11章 继承</h3>
+<p>11.1    继承简介</p>
+<p>11.2    C++中的继承基础</p>
+<p>11.3    派生类的构造顺序</p>
+<p>11.4    派生类的构造函数和初始化</p>
+<p>11.5    继承和访问修饰符</p>
+<p>11.6    向派生类添加新函数</p>
+<p>11.6A   调用继承的函数和覆盖行为</p>
+<p>11.6b   隐藏继承的函数</p>
+<p>11.7    多重继承</p>
+<p>11.x    第11章综合测验</p>
+<h3 id="12">第12章  虚函数</h3>
+<p>12.1    派生对象的基类的指针和引用</p>
+<p>12.2    虚函数和多态</p>
+<p>12.2A   override和final操作符，协变返回类型</p>
+<p>12.3    Virtual destructors, virtual assignment, and overriding virtualization</p>
+<p>12.4    Early binding and late binding</p>
+<p>12.5    The virtual table</p>
+<p>12.6    纯虚函数，抽象基类和接口类</p>
+<p>12.7    虚拟基类</p>
+<p>12.8    对象切片</p>
+<p>12.9    动态转换</p>
+<p>12.10   使用&lt;&lt;输出继承的类</p>
+<p>12.x    第12章综合测验</p>
+<h3 id="13">第13章   模板</h3>
+<p>13.1    函数模板</p>
+<p>13.2    函数模板实例</p>
+<p>13.3    模板类</p>
+<p>13.4    模板非类型参数</p>
+<p>13.5    函数模板特殊化</p>
+<p>13.6    类模板特殊化</p>
+<p>13.7    部分模板特殊化</p>
+<p>13.8    指针的部分模板特化</p>
+<p>13.x    第13章综合测验</p>
+<h3 id="14">第14章   异常</h3>
+<p>14.1    异常介绍</p>
+<p>14.2    基本异常处理</p>
+<p>14.3    异常，函数和堆栈展开</p>
+<p>14.4    未捕获的异常，catch-all处理程序和异常修饰符</p>
+<p>14.5    异常，类和继承</p>
+<p>14.6    重新抛出异常</p>
+<p>14.7    函数try blocks</p>
+<p>14.8    例外的危险性和缺点</p>
+<p>14.x    第14章综合测验</p>
+<h3 id="15">第15章   移动语义和智能指针</h3>
+<p>15.1    介绍智能指针和移动语义</p>
+<p>15.2    R值引用</p>
+<p>15.3    移动构造函数并移动赋值</p>
+<p>15.4    std::move</p>
+<p>15.5    std::unique_ptr</p>
+<p>15.6    std::shared_ptr</p>
+<p>15.7    std::shared_ptr和std::weak_ptr的循环依赖问题</p>
+<p>15.x第15章综合回顾</p>
+<h3 id="16">第16章   标准模板库</h3>
+<p>16.1    标准库</p>
+<p>16.2    STL容器概述</p>
+<p>16.3    STL迭代器概述</p>
+<p>16.4    STL算法概述</p>
+<h3 id="17-stdstring">第17章   std::string</h3>
+<p>17.1    std::string和std::wstring</p>
+<p>17.2    std::string构造和销毁</p>
+<p>17.3    std::string长度和容量</p>
+<p>17.4    std::string字符访问和转换为C风格的数组</p>
+<p>17.5    std::string赋值和交换</p>
+<p>17.6    std::string追加</p>
+<p>17.7    std::string插入</p>
+<h3 id="18-io">第18章 输入输出（I/O）</h3>
+<p>18.1    输入和输出（I/O）流</p>
+<p>18.2    用istream输入</p>
+<p>18.3    用ostream和ios输出</p>
+<p>18.4    字符串的stream类</p>
+<p>18.5    流状态和输入验证</p>
+<p>18.6    基本文件I/O.</p>
+<p>18.7    随机文件I/O.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>翻译（罗传月武）原文（Alex）</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-01-21 02:30:56
+-->

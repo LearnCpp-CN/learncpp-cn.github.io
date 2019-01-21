@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="罗传月武">
+        <link rel="canonical" href="https://learncpp-cn.github.io/1-C++ Basics/1.1-Structure of a program/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1.1-程序的结构 - LearnCpp中文版</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82042025-2', 'learncpp-cn.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LearnCpp中文版</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">主页</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第0章-简介/入门</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.1-Introduction to these tutorials/">0.1-教程简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.2-Introduction to programming languages/">0.2-编程语言简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.3-Introduction to C C++/">0.3-C/C++简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.4-Introduction to C++ development/">0.4-C++开发简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.5-Introduction to the compiler, linker, and libraries/">0.5-编译器，链接器和库简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/">0.6-安装集成开发环境(IDE)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第1章-C++基础知识</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">1.1-程序的结构</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第7章-函数</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../7-Functions/7.5-Inline functions/">7.5-内联函数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第8章- 面向对象编程基础</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../8-Basic object-oriented programming/8.3-Public vs private access specifiers/">8.3-公有私有访问修饰符</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about.md">关于中文翻译</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../7-Functions/7.5-Inline functions/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">声明语句</a></li>
+        <li class="main "><a href="#_2">表达式</a></li>
+        <li class="main "><a href="#_3">函数</a></li>
+        <li class="main "><a href="#c">库和C++标准库</a></li>
+        <li class="main "><a href="#_4">示例程序</a></li>
+        <li class="main "><a href="#_5">语法和语法错误</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>计算机程序是一系列指令，告诉计算机该做什么。程序通常由3个基本元素组成：表达式，语句和函数。</p>
+<h3 id="_1">声明语句</h3>
+<p>程序中最常见的指令类型是语句。C++中的语句是该语言中最小的独立单元。在人类语言中，它类似于一个句子，我们用它来传达一个想法。在C++中，我们编写语句以便向编译器传达我们想要执行的任务。C++中的语句通常（但不总是）以分号结束。</p>
+<p>C++中有许多不同类型的语句。以下是您可能在程序中找到的一些示例语句：</p>
+<pre><code>int x;
+x = 5;
+std::cout &lt;&lt; x;
+</code></pre>
+
+<p>int x;是声明声明。这个特殊的声明语句告诉编译器x是一个包含整数（int）值的变量。在编程中，变量为可以保存值的内存区域提供名称。程序中的所有变量必须在使用之前声明。我们将很快谈论变量。</p>
+<p>x = 5; 是一个为变量（x）赋值（5）的语句，因此我们可以稍后使用该值（我们在下一行中使用该值）。</p>
+<p>std::cout &lt;&lt; x; 是一个语句，它将变量x的值（我们在前一个语句中设置为5）输出到控制台。</p>
+<h3 id="_2">表达式</h3>
+<p>编译器还能够解析表达式。表达式指定要执行的计算。例如，作为孩子，我们都知道2 + 3等于5.在编程中，我们说2 + 3是一个表达式，其值为5。</p>
+<p>以下是不同类型表达式的一些示例：</p>
+<pre><code>2
+&quot;Hello, world!&quot;
+x
+2 + 3
+x = 5
+(2+x)*(y-3)
+std::cout &lt;&lt; x
+</code></pre>
+
+<p>您会注意到表达式可以包含文字值（例如2，其值为2，或者“Hello，world！”表示文本）。表达式还可以包含变量（例如x，其计算变量x保持的任何值），数学运算符（例如+，它执行加法）和函数调用（上面未示出，但稍后将讨论）。</p>
+<p>例如，x = 5（末尾没有分号）是一个有效的表达式，它将值5赋给变量x。</p>
+<p>表达式不能自己编译，因为它们应该在语句中使用。例如，如果您尝试编译表达式x = 5，您的编译器会抱怨（可能是缺少分号）。</p>
+<p>幸运的是，将表达式转换为等效语句非常容易。一个表达式语句是一个包含一个表达式后跟一个分号的声明。因此，我们可以使用表达式（例如x = 5），并将其转换为x = 5;将编译的表达式语句。</p>
+<p>有趣的是，有些语句可能包含多个表达式。我们将在未来的课程中看到这些例子。</p>
+<h3 id="_3">函数</h3>
+<p>在C++中，语句通常被分组为称为函数的单元。一个功能是语句的集合，依次执行。每个C++程序都必须包含一个名为main的特殊函数。运行C++程序时，执行从函数main中的第一个语句开始。通常编写函数来执行非常特定的工作。例如，名为“max”的函数可能包含指出两个数字中哪一个更大的语句。名为“calculateGrade”的函数可能会计算学生的成绩。我们稍后会详细讨论函数。</p>
+<p>有用的提示：将main（）函数放在名为main.cpp的.cpp文件中，或者与项目同名时最好。例如，如果您正在编写国际象棋游戏，您可以将main（）函数放在chess.cpp中。</p>
+<h3 id="c">库和C++标准库</h3>
+<p>一个库是预编译代码（如函数）的集合在许多不同的程序已被“打包”进行再利用。库提供了一种扩展程序可以执行的常用方法。例如，如果您正在编写游戏，则可能需要包含声音库和图形库。</p>
+<p>C++核心语言实际上非常小而简约（您将在这些教程中学习大部分内容）。但是，C++还附带了一个名为<strong>C++标准库</strong>的库，它为您的使用提供了额外的功能。C++标准库分为多个区域（有时也称为库，即使它们只是标准库的一部分），每个区域都专注于提供特定类型的功能。C++标准库中最常用的部分之一是iostream库，它包含写入控制台并从控制台用户获取输入的功能。</p>
+<h3 id="_4">示例程序</h3>
+<p>既然您已经对语句，表达式，函数和库有了简要的了解，那么让我们看一个简单的“hello，world”程序。</p>
+<pre><code>#include &lt;iostream&gt;
+
+int main()
+{
+   std::cout &lt;&lt; &quot;Hello, world!&quot;;
+   return 0;
+}
+</code></pre>
+
+<p>第1行是一种特殊类型的语句，称为预处理程序指令。预处理程序指令告诉编译器执行特殊任务。在这种情况下，我们告诉编译器我们想要将iostream头的内容添加到我们的程序中。iostream标头允许我们从iostream库访问功能，这将允许我们将文本写入控制台。</p>
+<p>第2行是空白的，编译器会忽略它。</p>
+<p>第3行声明main（）函数，如上所述，它是必需的。每个程序都必须有一个main（）函数。</p>
+<p>第4行和第7行告诉编译器哪些行是main函数的一部分。第4行的开始大括号和第7行的大括号之间的所有内容都被视为main（）函数的一部分。</p>
+<p>第5行是我们的第一个语句（你可以告诉它是一个语句，因为它以分号结尾），它是一个表达式语句。std :: cout是一个表示控制台/屏幕的特殊对象。&lt;&lt;符号是一个运算符（很像+是数学运算符），称为输出运算符。std :: cout理解通过输出操作符发送给它的任何东西都应该打印在屏幕上。在这种情况下，我们发送文本“Hello，world！”。</p>
+<p>第6行是一种新类型的语句，称为return语句。当可执行程序完成运行时，main（）函数会向操作系统发送一个值，指示它是否成功运行。</p>
+<p>这个特殊的return语句将值0返回给操作系统，这意味着“一切正常！”。非零数字通常用于表示出现问题，程序必须中止。在讨论函数时，我们将更详细地讨论返回语句。</p>
+<p>我们编写的所有程序都将遵循此模板或其中的变体。</p>
+<p>我们将在接下来的章节中更详细地讨论上面的每一行。</p>
+<p>（注意：如果你想自己编译这个程序，你可以。提醒Visual Studio用户，你需要确保关闭预编译的头文件，否则添加#include“stdafx.h”（或#include“pch.h “如果使用最新版本的Visual Studio 2017”到Visual Studio编写的任何C++代码文件的第一行）</p>
+<h3 id="_5">语法和语法错误</h3>
+<p>在英语中，句子是根据你在学校的英语课上学到的特定语法规则构建的。例如，普通句子在一段时间内结束。控制语句如何在语言中构造的规则称为语法。如果您忘记了句号并同时运行两个句子，则这违反了英语语法。</p>
+<p>C++也有一个语法：关于如何构造程序以便被认为有效的规则。编译程序时，编译器负责确保程序遵循C++语言的基本语法。如果违反规则，编译器会在您尝试编译程序时抱怨，并向您发出语法错误。</p>
+<p>例如，您在上面已经了解到许多类型的语句必须以分号结尾。</p>
+<p>让我们看看如果我们在以下程序中省略分号会发生什么：</p>
+<pre><code>#include &lt;iostream&gt;
+
+int main()
+{
+   std::cout &lt;&lt; &quot;Hello world!&quot;
+   return 0;
+}
+</code></pre>
+
+<p>Visual Studio产生以下错误：</p>
+<blockquote>
+<p>c:\users\apomeranz\documents\visual studio 2013\projects\test1\test1\test1.cpp(6): error C2143: syntax error : missing ';' before 'return'</p>
+</blockquote>
+<p>这告诉你第6行有一个语法错误：你在返回之前忘记了一个分号。在这种情况下，错误实际上在第5行的末尾。通常，编译器将精确定位出现语法错误的确切行。但是，有时它直到下一行才会注意到。</p>
+<p>编写程序时，语法错误很常见。幸运的是，它们通常很容易修复。一旦解决了所有语法错误，程序只能被完全编译（并执行）。</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>翻译（罗传月武）原文（Alex）</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="罗传月武">
+        <link rel="canonical" href="https://learncpp-cn.github.io/0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>0.6-安装集成开发环境(IDE) - LearnCpp中文版</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82042025-2', 'learncpp-cn.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LearnCpp中文版</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">主页</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第0章-简介/入门</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../0.1-Introduction to these tutorials/">0.1-教程简介</a>
+</li>
+            
+<li >
+    <a href="../0.2-Introduction to programming languages/">0.2-编程语言简介</a>
+</li>
+            
+<li >
+    <a href="../0.3-Introduction to C C++/">0.3-C/C++简介</a>
+</li>
+            
+<li >
+    <a href="../0.4-Introduction to C++ development/">0.4-C++开发简介</a>
+</li>
+            
+<li >
+    <a href="../0.5-Introduction to the compiler, linker, and libraries/">0.5-编译器，链接器和库简介</a>
+</li>
+            
+<li class="active">
+    <a href="./">0.6-安装集成开发环境(IDE)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第1章-C++基础知识</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../1-C++ Basics/1.1-Structure of a program/">1.1-程序的结构</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第7章-函数</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../7-Functions/7.5-Inline functions/">7.5-内联函数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第8章- 面向对象编程基础</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../8-Basic object-oriented programming/8.3-Public vs private access specifiers/">8.3-公有私有访问修饰符</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about.md">关于中文翻译</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../0.5-Introduction to the compiler, linker, and libraries/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../1-C++ Basics/1.1-Structure of a program/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#visual-studiowindows">Visual Studio（适用于Windows）</a></li>
+        <li class="main "><a href="#code-blockslinuxwindows">Code :: Blocks（适用于Linux或Windows）</a></li>
+        <li class="main "><a href="#mac-osx-ide">Mac OSX IDE</a></li>
+        <li class="main "><a href="#web">我可以使用基于Web的编译器吗？</a></li>
+        <li class="main "><a href="#linuxg">我可以使用命令行编译器（例如Linux上的g ++）吗？</a></li>
+        <li class="main "><a href="#ide">当事情出错时（又名IDE代表“我甚至不......”）</a></li>
+        <li class="main "><a href="#_1">继续</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>一个<strong>集成开发环境（IDE）</strong>是一个软件包含了所有你需要开发，编译，链接和调试程序的事情。</p>
+<p>使用典型的C++ IDE，您将获得一个代码编辑器，用于执行行编号和语法突出显示。许多（但不是全部）IDE包括C++编译器和链接器，IDE将知道如何与源代码进行交互以将源代码转换为可执行文件。当您需要调试程序时，可以使用集成调试器。</p>
+<p>此外，IDE通常捆绑了许多其他有用的编辑功能，例如集成帮助，名称完成，自动格式化，有时还有版本控制系统。因此，虽然您可以单独执行所有这些操作，但安装IDE并使它们都可以从单个界面访问它们要容易得多。</p>
+<p>所以让我们安装一个！明显的下一个问题是，“哪一个？”。许多IDE都是免费的（价格合理），如果您愿意，可以安装多个IDE，因此这里没有“错误的决定”。我们将在下面推荐一些我们的最爱。</p>
+<p>如果您还有其他IDE，那也没关系。我们在这些教程中向您展示的概念通常适用于任何体面的现代IDE。但是，各种IDE使用不同的名称，布局，键映射等...因此您可能需要在IDE中进行一些搜索才能找到相同的功能。</p>
+<h3 id="visual-studiowindows">Visual Studio（适用于Windows）</h3>
+<p>如果您在Windows机器上进行开发（大多数人都是如此）并且磁盘空间和下载大小不是约束，那么我们强烈建议您使用Visual Studio Community 2017。当您运行安装程序时，您最终会进入一个屏幕，询问您要安装的工作负载。选择使用C++进行桌面开发。如果不这样做，那么C++功能将无法使用。</p>
+<p>在屏幕右侧选择的默认选项应该没问题，但请确保选择了Windows 10 SDK。Windows 10 SDK可以在旧版本的Windows上使用，因此如果您仍在运行Windows 7或8，请不要担心。</p>
+<p><img alt="Visual Studio工作负载" src="https://www.learncpp.com/images/CppTutorial/Chapter0/VS2017-Installer-min.png" /></p>
+<p>如果磁盘空间和/或下载大小是一个挑战，那么我们建议使用Microsoft免费的Windows桌面Visual Studio Express 2017，您可以在页面底部找到它。</p>
+<h3 id="code-blockslinuxwindows">Code :: Blocks（适用于Linux或Windows）</h3>
+<p>如果您正在使用Linux进行开发（或者您正在开发Windows但希望编写可以轻松移植到Linux的程序），我们建议使用Code :: Blocks。Code :: Blocks是一个免费的开源跨平台IDE，可以在Linux和Windows上运行。</p>
+<blockquote>
+<p>对于Windows用户</p>
+<p>确保获得捆绑了MinGW的Code :: Blocks的版本（它应该是其文件名以mingw-setup.exe结尾的版本）。这将安装MinGW，其中包括GCC C++编译器的Windows端口：</p>
+<p><img alt="Code :: Blocks MinGW Windows下载" src="https://www.learncpp.com/images/CppTutorial/Chapter0/CB-MinGWDownload-min.png" /></p>
+</blockquote>
+<p>当您第一次启动Code :: Blocks时，您可能会得到一个编译器自动检测对话框。如果这样做，请确保将GNU GCC Compiler设置为默认编译器，然后选择确定按钮。</p>
+<p><img alt="编译器自动检测对话框" src="https://www.learncpp.com/images/CppTutorial/Chapter0/CompilersAutoDetection-min.png" /></p>
+<p>使用Code :: Blocks，默认情况下可以禁用C++ 11 / C++ 14 / C++ 17功能。你肯定想检查并打开它。首先，转到“设置”菜单&gt;“编译器”：</p>
+<p><img alt="Code :: Blocks Settings&gt; Compiler" src="https://www.learncpp.com/images/CppTutorial/Chapter0/CB-SettingsCompiler-min.png" /></p>
+<p>然后找到标有Have g ++的方框符合C++ XX ISO C++语言标准[-std = C++ XX] : ,其中XX为11,14或其他更高的数字（参见红框内的项目）下面的例子）：</p>
+<p><img alt="Code :: Blocks C++ 11设置" src="https://www.learncpp.com/images/CppTutorial/Chapter0/CB-C++11-min.png" /></p>
+<p>检查具有最高编号的那个（在上面的例子中，这是红色框内的C++ 14选项）。</p>
+<p>您的Code :: Blocks版本也可能支持C++的实验版或刚刚发布的版本。如果是这样，这将被标记为Have g ++遵循即将推出的C++ 11YY（又名C++ XX）ISO C++语言标准[-std = C++ ZZ]（参见上面的蓝框）。如果要在该版本中启用功能，可以选择检查这些功能，但请注意支持可能不完整（例如某些功能可能缺失）。</p>
+<p><strong>问：我想在Code :: Blocks中启用C++ 17功能，但我没有看到-std = C++ 17选项</strong></p>
+<p>如果你看到-std = C++ 1z的一个选项，那就相当了（C++ 17之前被称为C++ 1z，然后才知道它将在什么年份完成）。</p>
+<p>或者，您可以转到“其他编译器选项”选项卡并键入-std = C++ 17。</p>
+<p><img alt="Code :: Blocks其他编译器选项" src="https://www.learncpp.com/images/CppTutorial/Chapter0/CB-OtherCompilerOptions-min.png" /></p>
+<p>如果您的编译器支持C++ 17，这将有效。如果您使用旧版本的Code :: Blocks和C++ 17功能似乎不起作用，请升级您的编译器。</p>
+<p><strong>问：我收到“在GNU GCC编译器的已配置搜索路径中找不到编译器可执行文件”错误</strong></p>
+<p>请尝试以下方法：</p>
+<ol>
+<li>在Windows上，请确保已下载Code :: Blocks WITH MinGW的版本。这是名字中有“mingw”的人。</li>
+<li>尝试进入设置，编译器，然后选择“重置为默认值”。</li>
+<li>尝试转到设置，编译器，工具链可执行文件选项卡，并确保将“编译器的安装目录”设置为MinGW目录（例如C：\ Program Files（x86）\ CodeBlocks \ MinGW）。</li>
+<li>尝试执行完全卸载，然后重新安装。</li>
+<li>尝试不同的编译器。</li>
+</ol>
+<h3 id="mac-osx-ide">Mac OSX IDE</h3>
+<p>流行的Mac选择包括Xcode（如果它可用）或Eclipse。Eclipse默认情况下未设置为使用C++，您需要安装可选的C++组件。</p>
+<p>虽然Visual Studio for Mac已经发布，但截至2018年8月它不支持C++，所以目前我们不推荐它。</p>
+<h3 id="web">我可以使用基于Web的编译器吗？</h3>
+<p>是的，对某些事情。当您的IDE正在下载时（或者如果您不确定是否要提交安装IDE），可以使用基于Web的编译器继续本教程，例如TutorialsPoint中的编译器。</p>
+<p>基于Web的编译器适用于简单的练习和简单的练习。但是，它们的功能通常非常有限 - 许多不允许您保存项目，创建可执行文件或有效调试程序。您可以尽可能迁移到完整的IDE。</p>
+<h3 id="linuxg">我可以使用命令行编译器（例如Linux上的g ++）吗？</h3>
+<p>是的，但您需要找到自己的编辑器并查找如何在其他地方使用它。</p>
+<h3 id="ide">当事情出错时（又名IDE代表“我甚至不......”）</h3>
+<p>IDE安装似乎导致其公平的问题。安装可能会彻底失败（或者安装可能会起作用，但是当您尝试使用它时，由于配置问题，IDE会出现问题）。如果遇到此类问题，请尝试卸载IDE（如果它首先安装），重新启动计算机，暂时禁用防病毒或防恶意软件，然后再次尝试安装。</p>
+<p>如果此时仍遇到问题，您有两种选择。更简单的选择是尝试不同的IDE。另一种选择是解决问题。遗憾的是，安装和配置错误的原因各不相同，并且特定于IDE软件本身，我们无法有效地就如何解决此类问题提出建议。在这种情况下，我们建议将您遇到的错误消息或问题复制到Google搜索中，并尝试在其他地方找到一个不可避免地遇到同样问题的可怜的灵魂的论坛帖子。通常会有关于您可以尝试解决问题的建议。</p>
+<h3 id="_1">继续</h3>
+<p>一旦安装了IDE（如果事情没有按预期进行，这可能是最困难的步骤之一），或者如果您暂时继续使用基于Web的编译器，那么您就可以编写第一个程序了！</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>翻译（罗传月武）原文（Alex）</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

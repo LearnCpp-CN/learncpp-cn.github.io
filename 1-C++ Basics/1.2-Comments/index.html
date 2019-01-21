@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="罗传月武">
+        <link rel="canonical" href="https://learncpp-cn.github.io/1-C++ Basics/1.2-Comments/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1.2 Comments - LearnCpp中文版</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82042025-2', 'learncpp-cn.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LearnCpp中文版</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">主页</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第0章-简介/入门</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.1-Introduction to these tutorials/">0.1-教程简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.2-Introduction to programming languages/">0.2-编程语言简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.3-Introduction to C C++/">0.3-C/C++简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.4-Introduction to C++ development/">0.4-C++开发简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.5-Introduction to the compiler, linker, and libraries/">0.5-编译器，链接器和库简介</a>
+</li>
+            
+<li >
+    <a href="../../0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/">0.6-安装集成开发环境(IDE)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第1章-C++基础知识</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../1.1-Structure of a program/">1.1-程序的结构</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第7章-函数</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../7-Functions/7.5-Inline functions/">7.5-内联函数</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">第8章- 面向对象编程基础</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../8-Basic object-oriented programming/8.3-Public vs private access specifiers/">8.3-公有私有访问修饰符</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../about.md">关于中文翻译</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#comments">comments(未校对)</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h3 id="comments">comments(未校对)</h3>
+<p><strong>Types of comments</strong></p>
+<p>A <strong>comment</strong> is a line (or multiple lines) of text that are inserted into the source code to explain what the code is doing. In C++ there are two kinds of comments.</p>
+<p>The // symbol begins a C++ single-line comment, which tells the compiler to ignore everything to the end of the line. For example:</p>
+<p><strong>注释</strong>是一行插入源代码中的文字，用于提示这段代码的作用。在C++当中，有两种注释。</p>
+<pre><code>std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl; // Everything from here to the right is ignored.
+</code></pre>
+
+<p>Typically, the single line comment is used to make a quick comment about a single line of code.</p>
+<pre><code>std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl; // cout and endl live in the iostream library
+std::cout &lt;&lt; &quot;It is very nice to meet you!&quot; &lt;&lt; std::endl; // these comments make the code hard to read
+std::cout &lt;&lt; &quot;Yeah!&quot; &lt;&lt; std::endl; // especially when lines are different lengths
+</code></pre>
+
+<p>Having comments to the right of a line can make both the code and the comment hard to read, particularly if the line is long. Consequently, the // comment is often placed above the line it is commenting.</p>
+<pre><code>// cout and endl live in the iostream library
+std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl;
+
+// this is much easier to read
+std::cout &lt;&lt; &quot;It is very nice to meet you!&quot; &lt;&lt; std::endl;
+
+// don't you think so?
+std::cout &lt;&lt; &quot;Yeah!&quot; &lt;&lt; std::endl;
+</code></pre>
+
+<p>The /<em> and </em>/ pair of symbols denotes a C-style multi-line comment. Everything in between the symbols is ignored.</p>
+<pre><code>/* This is a multi-line comment.
+   This line will be ignored.
+   So will this one. */
+</code></pre>
+
+<p>Since everything between the symbols is ignored, you will sometimes see programmers “beautify” their multiline comments:</p>
+<pre><code>/* This is a multi-line comment.
+ * the matching asterisks to the left
+ * can make this easier to read
+ */
+</code></pre>
+
+<p>Multi-line style comments do not nest. Consequently, the following will have unexpected results:</p>
+<pre><code>/* This is a multi-line /* comment */ this is not inside the comment */
+// The above comment ends at the first */, not the second */
+</code></pre>
+
+<p>Rule: Never nest comments inside of other comments.</p>
+<p><strong>Proper use of comments</strong></p>
+<p>Typically, comments should be used for three things. For a given library, program, or function, comments are best used to describe what the library, program, or function, does. For example:</p>
+<pre><code>// This program calculates the student's final grade based on his test and homework scores.
+</code></pre>
+
+<pre><code>// This function uses newton's method to approximate the root of a given equation.
+</code></pre>
+
+<pre><code>// The following lines generate a random item based on rarity, level, and a weight factor.
+</code></pre>
+
+<p>All of these comments give the reader a good idea of what the program is trying to accomplish without having to look at the actual code. The user (possibly someone else, or you if you’re trying to reuse code you’ve already previously written) can tell at a glance whether the code is relevant to what he or she is trying to accomplish. This is particularly important when working as part of a team, where not everybody will be familiar with all of the code.</p>
+<p>Second, within a library, program, or function described above, comments can be used to describe how the code is going to accomplish its goal.</p>
+<pre><code>/* To calculate the final grade, we sum all the weighted midterm and homework scores
+    and then divide by the number of scores to assign a percentage.  This percentage is
+    used to calculate a letter grade. */
+</code></pre>
+
+<pre><code>// To generate a random item, we're going to do the following:
+// 1) Put all of the items of the desired rarity on a list
+// 2) Calculate a probability for each item based on level and weight factor
+// 3) Choose a random number
+// 4) Figure out which item that random number corresponds to
+// 5) Return the appropriate item
+</code></pre>
+
+<p>These comments give the user an idea of how the code is going to accomplish it’s goal without going into too much detail.</p>
+<p>At the statement level, comments should be used to describe why the code is doing something. A bad statement comment explains what the code is doing. If you ever write code that is so complex that needs a comment to explain what a statement is doing, you probably need to rewrite your statement, not comment it.</p>
+<p>Here are some examples of bad line comments and good statement comments.</p>
+<p>Bad comment:</p>
+<pre><code>// Set sight range to 0
+sight = 0;
+</code></pre>
+
+<p>(yes, we already can see that sight is being set to 0 by looking at the statement)</p>
+<p>Good comment:</p>
+<pre><code>// The player just drank a potion of blindness and can not see anything
+sight = 0;
+</code></pre>
+
+<p>(now we know WHY the player’s sight is being set to 0)</p>
+<p>Bad comment:</p>
+<pre><code>// Calculate the cost of the items
+cost = items / 2 * storePrice;
+</code></pre>
+
+<p>(yes, we can see that this is a cost calculation, but why is items divided by 2?)</p>
+<p>Good comment:</p>
+<pre><code>// We need to divide items by 2 here because they are bought in pairs
+cost = items / 2 * storePrice;
+</code></pre>
+
+<p>(now we know!)</p>
+<p>Programmers often have to make a tough decision between solving a problem one way, or solving it another way. Comments are a great way to remind yourself (or tell somebody else) the reason you made one decision instead of another.</p>
+<p>Good comments:</p>
+<pre><code>// We decided to use a linked list instead of an array because
+// arrays do insertion too slowly.
+</code></pre>
+
+<pre><code>// We're going to use newton's method to find the root of a number because
+// there is no deterministic way to solve these equations.
+</code></pre>
+
+<p>Finally, comments should be written in a way that makes sense to someone who has no idea what the code does. It is often the case that a programmer will say “It’s obvious what this does! There’s no way I’ll forget about this”. Guess what? It’s not obvious, and you will be amazed how quickly you forget. 🙂 You (or someone else) will thank you later for writing down the what, how, and why of your code in human language. Reading individual lines of code is easy. Understanding what goal they are meant to accomplish is not.</p>
+<p>To summarize:</p>
+<ul>
+<li>At the library, program, or function level, describe what</li>
+<li>Inside the library, program, or function, describe how</li>
+<li>At the statement level, describe why.</li>
+</ul>
+<p><strong>Commenting out code</strong></p>
+<p>Converting one or more lines of code into a comment is called <strong>commenting out</strong> your code. This provides a convenient way to (temporarily) exclude parts of your code from being included in your compiled program.</p>
+<p>To comment out a single line of code, simply use the // style comment to turn a line of code into a comment temporarily:</p>
+<p>Uncommented out:</p>
+<pre><code>    std::cout &lt;&lt; 1;
+</code></pre>
+
+<p>Commented out:</p>
+<pre><code>//    std::cout &lt;&lt; 1;
+</code></pre>
+
+<p>To comment out a block of code, use // on multiple lines of code, or the /<em> </em>/ style comment to turn the block of code into a comment temporarily.</p>
+<p>Uncommented out:</p>
+<pre><code>    std::cout &lt;&lt; 1;
+    std::cout &lt;&lt; 2;
+    std::cout &lt;&lt; 3;
+</code></pre>
+
+<p>Commented out:</p>
+<pre><code>//    std::cout &lt;&lt; 1;
+//    std::cout &lt;&lt; 2;
+//    std::cout &lt;&lt; 3;
+</code></pre>
+
+<p>or</p>
+<pre><code>/*
+    std::cout &lt;&lt; 1;
+    std::cout &lt;&lt; 2;
+    std::cout &lt;&lt; 3;
+*/
+</code></pre>
+
+<p>There are quite a few reasons you might want to do this:</p>
+<ol>
+<li>
+<p>You’re working on a new piece of code that won’t compile yet, and you need to run the program. The compiler won’t let you run if there are compiler errors. Commenting out the code that won’t compile will allow the program to compile so you can run it. When you’re ready, you can uncomment the code, and continue working on it.</p>
+</li>
+<li>
+<p>You’ve written code that compiles but doesn’t work correctly, and you don’t have time to fix it until later. Commenting out the broken code will ensure the broken code doesn’t execute and cause problems until you can fix it.</p>
+</li>
+<li>
+<p>To find the source of an error. If a program isn’t producing the desired results (or is crashing), it can be useful in some cases to disable parts of your code to see if you can isolate what’s causing it to not work correctly. If you comment out one or more lines of code, and your program starts working as expected (or stops crashing), odds are whatever you last commented out was part of the problem. You can then investigate why those lines of code are causing the problem.</p>
+</li>
+<li>
+<p>You want to replace one piece of code with another piece of code. Instead of just deleting the original code, you can comment it out and leave it there for reference until you’re sure your new code works properly. Once you are sure your new code is working, you can remove the old commented out code. If you can’t get your new code to work, you can always delete the new code and uncomment the old code to revert back to what you had before.</p>
+</li>
+</ol>
+<p>Commenting out code is a common thing to do while developing, so many IDEs provide support for commenting out a highlighted section of code. How you access this functionality varies by IDE (in Visual Studio, you can find it in the Edit menu under Edit-&gt;Advanced-&gt;Comment Selection/Uncomment Selection).</p>
+<p><strong>A note on comments in these tutorials</strong></p>
+<p>Throughout the rest of this tutorial series, I’ll be using comments inside code blocks to help illustrate how things work. Astute readers will note that by the above standards, most of these comments are horrible. 🙂 As you read through the rest of the tutorials, keep in mind that the comments are serving an intentional educational purpose, not trying to demonstrate what good comments look like.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>翻译（罗传月武）原文（Alex）</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

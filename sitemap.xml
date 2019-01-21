@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://learncpp-cn.github.io/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.1-Introduction to these tutorials/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.2-Introduction to programming languages/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.3-Introduction to C C++/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.4-Introduction to C++ development/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.5-Introduction to the compiler, linker, and libraries/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/1-C++ Basics/1.1-Structure of a program/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/7-Functions/7.5-Inline functions/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://learncpp-cn.github.io/8-Basic object-oriented programming/8.3-Public vs private access specifiers/</loc>
+     <lastmod>2019-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
