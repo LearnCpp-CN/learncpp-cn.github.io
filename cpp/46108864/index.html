@@ -96,25 +96,27 @@
 
 
 
-  <meta name="description" content="LearnCpp.com是一个致力于教你如何用C++编程。这里是LearnCpp教程的中文翻译。由于翻译可能无法做到精确表达原文意思，我们推荐您在对问题有疑惑的时候去阅读一下英文版的教程。如果您对翻译有更好的建议，可以在评论区提出，如果是对教程的内容有问题，请先查看原文，如果不是翻译错误的话，请直接在原网站评论区向作者（ALEX ）反馈。我会根据个人时间不定期更新和校对。 无论您是否有任何先前的编">
+  <meta name="description" content="在我们编写和执行第一个C++程序之前，我们需要更详细地了解一个C++程序是怎么被开发出来的。看下图：  第1步：定义您要解决的问题。这是“做什么”的阶段，在这个阶段你需要找出你要解决的问题。定义你想要编写什么样的程序或许是最简单的一步，但也可能是最难的一步。但从概念上讲，它是最简单的。您只需要有一个深思熟虑的想法，你就可以进行下一步了。 这里有一些例子： “我想编写一个程序，允许我输入许多数字，然">
 <meta name="keywords" content="C++,文档,教程">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LearnCpp中文版">
-<meta property="og:url" content="https://learncpp-cn.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="介绍C++开发">
+<meta property="og:url" content="https://learncpp-cn.github.io/cpp/46108864/index.html">
 <meta property="og:site_name" content="LearnCpp中文版">
-<meta property="og:description" content="LearnCpp.com是一个致力于教你如何用C++编程。这里是LearnCpp教程的中文翻译。由于翻译可能无法做到精确表达原文意思，我们推荐您在对问题有疑惑的时候去阅读一下英文版的教程。如果您对翻译有更好的建议，可以在评论区提出，如果是对教程的内容有问题，请先查看原文，如果不是翻译错误的话，请直接在原网站评论区向作者（ALEX ）反馈。我会根据个人时间不定期更新和校对。 无论您是否有任何先前的编">
+<meta property="og:description" content="在我们编写和执行第一个C++程序之前，我们需要更详细地了解一个C++程序是怎么被开发出来的。看下图：  第1步：定义您要解决的问题。这是“做什么”的阶段，在这个阶段你需要找出你要解决的问题。定义你想要编写什么样的程序或许是最简单的一步，但也可能是最难的一步。但从概念上讲，它是最简单的。您只需要有一个深思熟虑的想法，你就可以进行下一步了。 这里有一些例子： “我想编写一个程序，允许我输入许多数字，然">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-11T14:02:19.770Z">
+<meta property="og:image" content="https://www.learncpp.com/images/CppTutorial/Chapter0/Development-min.png">
+<meta property="og:updated_time" content="2019-02-07T07:24:53.235Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LearnCpp中文版">
-<meta name="twitter:description" content="LearnCpp.com是一个致力于教你如何用C++编程。这里是LearnCpp教程的中文翻译。由于翻译可能无法做到精确表达原文意思，我们推荐您在对问题有疑惑的时候去阅读一下英文版的教程。如果您对翻译有更好的建议，可以在评论区提出，如果是对教程的内容有问题，请先查看原文，如果不是翻译错误的话，请直接在原网站评论区向作者（ALEX ）反馈。我会根据个人时间不定期更新和校对。 无论您是否有任何先前的编">
+<meta name="twitter:title" content="介绍C++开发">
+<meta name="twitter:description" content="在我们编写和执行第一个C++程序之前，我们需要更详细地了解一个C++程序是怎么被开发出来的。看下图：  第1步：定义您要解决的问题。这是“做什么”的阶段，在这个阶段你需要找出你要解决的问题。定义你想要编写什么样的程序或许是最简单的一步，但也可能是最难的一步。但从概念上讲，它是最简单的。您只需要有一个深思熟虑的想法，你就可以进行下一步了。 这里有一些例子： “我想编写一个程序，允许我输入许多数字，然">
+<meta name="twitter:image" content="https://www.learncpp.com/images/CppTutorial/Chapter0/Development-min.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://learncpp-cn.github.io/">
+  <link rel="canonical" href="https://learncpp-cn.github.io/cpp/46108864/">
 
 
 
@@ -124,7 +126,7 @@
   };
 </script>
 
-  <title>LearnCpp中文版 | LearnCpp中文版</title>
+  <title>介绍C++开发 | LearnCpp中文版</title>
   
 
 
@@ -222,7 +224,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -268,19 +270,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -338,280 +327,212 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://learncpp-cn.github.io/cpp/46108864/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="罗传月武（翻译） Alex（原文）">
+      <meta itemprop="description" content="LearnCpp中文翻译系列">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/9363799">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LearnCpp中文版">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">LearnCpp中文版
-
-</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>LearnCpp.com是一个致力于教你如何用C++编程。这里是LearnCpp教程的中文翻译。由于翻译可能无法做到精确表达原文意思，我们推荐您在对问题有疑惑的时候去阅读一下英文版的教程。如果您对翻译有更好的建议，可以在评论区提出，如果是对教程的内容有问题，请先查看原文，如果不是翻译错误的话，请直接在原网站评论区向作者（ALEX ）反馈。我会根据个人时间不定期更新和校对。</p>
-<p>无论您是否有任何先前的编程经验，本网站上的教程将指导您完成编写，编译和调试C++程序的所有步骤，所有这些都包含大量示例。</p>
-<p>成为专家不是一夜之间的事情。但只要多一点耐心，你一定会成功的！本网站将为您指明方向。</p>
-<h3 id="第0章-简介-入门"><a href="#第0章-简介-入门" class="headerlink" title="第0章 简介/入门"></a>第0章 简介/入门</h3><p><a href="https://learncpp-cn.github.io/cpp/1ed2d910">0.1     教程简介</a></p>
-<p><a href="0-Introduction&amp;Getting Started/0.2-Introduction to programming languages.md">0.2     编程语言简介</a></p>
-<p><a href="0-Introduction&amp;Getting Started/0.3-Introduction to C C++.md">0.3     C/C++简介</a></p>
-<p><a href="0-Introduction&amp;Getting Started/0.4-Introduction to C++ development.md">0.4     C++开发简介</a></p>
-<p><a href="0-Introduction&amp;Getting Started/0.5-Introduction to the compiler, linker, and libraries.md">0.5     编译器、链接器和库</a></p>
-<p><a href="0-Introduction&amp;Getting Started/0.6-Installing an Integrated Development Environment (IDE">0.6     安装集成开发环境（IDE）</a>.md)</p>
-<p>0.7     编译你的第一个程序</p>
-<p>0.8     C++常见问题</p>
-<p>0.9     编译器配置：构建配置（Build configurations）</p>
-<p>0.10    编译器配置：编译器拓展</p>
-<p>0.11    编译器配置：警告和错误等级</p>
-<h3 id="第1章-C-基础知识"><a href="#第1章-C-基础知识" class="headerlink" title="第1章 C++基础知识"></a>第1章 C++基础知识</h3><p><a href="1-C++ Basics/1.1-statements-and-the-structure-of-a-program.md">1.1     程序的结构</a></p>
-<p><a href="1-C++ Basics/1.2-Comments.md">1.2     注释</a></p>
-<p>1.3     初识变量，初始化和赋值</p>
-<p>1.3A    初识cout，cin和endl</p>
-<p>1.4     初识函数和返回值</p>
-<p>1.4A    初识函数形参和实参</p>
-<p>1.4B    为什么函数有用，以及如何有效地使用它们</p>
-<p>1.4C    关键字和命名标识符</p>
-<p>1.4D    初识局部作用域</p>
-<p>1.5     初识操作符</p>
-<p>1.6     空格和格式化基础</p>
-<p>1.7     向前声明和定义</p>
-<p>1.8     包含多个文件的程序</p>
-<p>1.8A    命名冲突和std命名空间</p>
-<p>1.9     头文件</p>
-<p>1.10    初识预处理器</p>
-<p>1.10A    头文件保护(Header Guard)</p>
-<p>1.10B    如何设计你的第一个程序</p>
-<p>1.11    调试程序（步进和断点）</p>
-<p>1.11a    调试程序（观察变量和调用堆栈）</p>
-<p>1.12    第1章综合测验</p>
-<h3 id="第2章-变量和基本数据类型"><a href="#第2章-变量和基本数据类型" class="headerlink" title="第2章 变量和基本数据类型"></a>第2章 变量和基本数据类型</h3><p>2.1     基本变量定义，初始化和赋值</p>
-<p>2.2     void</p>
-<p>2.3     可变大小和sizeof运算符</p>
-<p>2.4     整型</p>
-<p>2.4A    固定宽度整数</p>
-<p>2.5     浮点数字</p>
-<p>2.6     布尔值和if语句简介</p>
-<p>2.7     字符</p>
-<p>2.8     字面值</p>
-<p>2.9     Const，constexpr和符号常量</p>
-<p>2.10    第2章综合测验</p>
-<h3 id="第3章-操作符"><a href="#第3章-操作符" class="headerlink" title="第3章 操作符"></a>第3章 操作符</h3><p>3.1     运算符优先级和关联性</p>
-<p>3.2     算术运算符</p>
-<p>3.3     递增/递减运算符以及它的副作用</p>
-<p>3.4     sizeof，逗号和条件运算符</p>
-<p>3.5     关系运算符（比较）</p>
-<p>3.6     逻辑运算符</p>
-<p>3.7     在二进制和十进制之间转换</p>
-<p>3.8     按位运算符</p>
-<p>3.8A    位标志和位掩码</p>
-<p>3.X     第3章综合测验</p>
-<h3 id="第4章-可变范围和更多类型"><a href="#第4章-可变范围和更多类型" class="headerlink" title="第4章 可变范围和更多类型"></a>第4章 可变范围和更多类型</h3><p>4.1        块语句（复合语句）</p>
-<p>4.1A    局部变量，作用域和生存周期</p>
-<p>4.2     全局变量和链接（Linkage）</p>
-<p>4.2A    为什么全局变量不好</p>
-<p>4.3        静态生存周期变量</p>
-<p>4.3A    作用域，生存周期和链接（Linkage）摘要</p>
-<p>4.3B    命名空间</p>
-<p>4.3c    using语句</p>
-<p>4.4        隐式类型转换</p>
-<p>4.4A    显式类型转换</p>
-<p>4.4B    std::string简介</p>
-<p>4.5        枚举类型</p>
-<p>4.5A    枚举类</p>
-<p>4.6        Typedef和类型别名</p>
-<p>4.7        结构体</p>
-<p>4.8        auto关键字</p>
-<p>4.x版    第4章综合测验</p>
-<h3 id="第5章-控制流"><a href="#第5章-控制流" class="headerlink" title="第5章 控制流"></a>第5章 控制流</h3><p>5.1     流程控制介绍</p>
-<p>5.2     if语句</p>
-<p>5.3     switch语句</p>
-<p>5.4     goto语句</p>
-<p>5.5     while语句</p>
-<p>5.6     do whille语句</p>
-<p>5.7     for语句</p>
-<p>5.8     break和continue</p>
-<p>5.9     随机数生成</p>
-<p>5.10    std::cin，提取和处理无效的文本输入</p>
-<p>5.11    代码测试简介</p>
-<p>5.x     第五章综合测验</p>
-<h3 id="第6章-数组，字符串，指针和引用"><a href="#第6章-数组，字符串，指针和引用" class="headerlink" title="第6章 数组，字符串，指针和引用"></a>第6章 数组，字符串，指针和引用</h3><p>6.1     数组（第一部分）</p>
-<p>6.2     数组（第二部分）</p>
-<p>6.3     数组和循环</p>
-<p>6.4        使用选择排序对数组进行排序</p>
-<p>6.5     多维数组</p>
-<p>6.6        C风格的字符串</p>
-<p>6.7     指针简介</p>
-<p>6.7A    空指针</p>
-<p>6.8     指针和数组</p>
-<p>6.8A    指针算术和数组索引</p>
-<p>6.8b    C风格的字符串符号常量</p>
-<p>6.9     使用new和delete进行动态内存分配</p>
-<p>6.9a    动态分配数组</p>
-<p>6.10    指针和常量</p>
-<p>6.11    引用变量</p>
-<p>6.11A   引用和常量</p>
-<p>6.12    使用指针和引用选择成员</p>
-<p>6.12a   foreach循环</p>
-<p>6.13    void指针</p>
-<p>6.14    指针的指针和动态多维数组的指针</p>
-<p>6.15    std::array简介</p>
-<p>6.16    std::vector简介</p>
-<p>6.x     第6章综合测验</p>
-<h3 id="第7章-函数"><a href="#第7章-函数" class="headerlink" title="第7章 函数"></a>第7章 函数</h3><p>7.1     函数行参和实参</p>
-<p>7.2     按值传递参数</p>
-<p>7.3     通过引用传递参数</p>
-<p>7.4     通过地址传递参数</p>
-<p>7.4A    按值，引用和地址返回值</p>
-<p>7.5     内联函数</p>
-<p>7.6     函数重载</p>
-<p>7.7     默认参数</p>
-<p>7.8     函数指针</p>
-<p>7.9        栈和堆</p>
-<p>7.10    std::vector容量和堆栈行为</p>
-<p>7.11    递归</p>
-<p>7.12    处理errors，cerr和exit</p>
-<p>7.12a   断言和static_assert</p>
-<p>7.13    命令行参数</p>
-<p>7.14    省略号（以及为什么要避免它们）</p>
-<p>7.x     第7章综合测验</p>
-<h3 id="第8章-基本的面向对象编程"><a href="#第8章-基本的面向对象编程" class="headerlink" title="第8章 基本的面向对象编程"></a>第8章 基本的面向对象编程</h3><p><a href="8-Basic object-oriented programming/8.1-Welcome to object-oriented programming.md">8.1    欢迎使用面向对象的编程</a></p>
-<p>8.2     类和类成员</p>
-<p>8.3     公共与私有访问修饰符</p>
-<p>8.4     访问函数与封装</p>
-<p>8.5     构造函数</p>
-<p>8.5A    构造函数成员初始化列表</p>
-<p>8.5b    非静态成员初始化</p>
-<p>8.6     重叠构造函数和委托构造函数</p>
-<p>8.7     析构函数</p>
-<p>8.8     隐藏的“this”指针</p>
-<p>8.9     类代码和头文件</p>
-<p>8.10    Const类对象和成员函数</p>
-<p>8.11    静态成员变量</p>
-<p>8.12    静态成员函数</p>
-<p>8.13    友元函数和类</p>
-<p>8.14    匿名对象</p>
-<p>8.15    类中的嵌套类型</p>
-<p>8.16    代码计时</p>
-<p>8.x     第8章综合测验</p>
-<h3 id="第9章-运算符重载"><a href="#第9章-运算符重载" class="headerlink" title="第9章 运算符重载"></a>第9章 运算符重载</h3><p>9.1     运算符重载简介</p>
-<p>9.2     使用友元函数重载算术运算符</p>
-<p>9.2A    使用常规函数重载运算符</p>
-<p>9.3     重载I/O运算符</p>
-<p>9.4     使用成员函数重载运算符</p>
-<p>9.5     重载一元运算符+， - 和！</p>
-<p>9.6     重载比较运算符</p>
-<p>9.7     重载递增和递减运算符</p>
-<p>9.8     重载下标运算符</p>
-<p>9.9     重载括号运算符</p>
-<p>9.10    重载类型转换</p>
-<p>9.11    复制构造函数</p>
-<p>9.12    复制初始化</p>
-<p>9.13    转换构造函数，显式和删除</p>
-<p>9.14    重载赋值运算符</p>
-<p>9.15    浅复制与深复制</p>
-<p>9.x     第9章综合测验</p>
-<h3 id="第10章-对象关系的介绍"><a href="#第10章-对象关系的介绍" class="headerlink" title="第10章 对象关系的介绍"></a>第10章 对象关系的介绍</h3><p>10.1    对象关系</p>
-<p>10.2    组合</p>
-<p>10.3    聚合</p>
-<p>10.4    关联</p>
-<p>10.5    依赖</p>
-<p>10.6    容器类</p>
-<p>10.7    std::initializer_list</p>
-<p>10.x    第10章综合测验</p>
-<h3 id="第11章-继承"><a href="#第11章-继承" class="headerlink" title="第11章 继承"></a>第11章 继承</h3><p>11.1    继承简介</p>
-<p>11.2    C++中的继承基础</p>
-<p>11.3    派生类的构造顺序</p>
-<p>11.4    派生类的构造函数和初始化</p>
-<p>11.5    继承和访问修饰符</p>
-<p>11.6    向派生类添加新函数</p>
-<p>11.6A   调用继承的函数和覆盖行为</p>
-<p>11.6b   隐藏继承的函数</p>
-<p>11.7    多重继承</p>
-<p>11.x    第11章综合测验</p>
-<h3 id="第12章-虚函数"><a href="#第12章-虚函数" class="headerlink" title="第12章  虚函数"></a>第12章  虚函数</h3><p>12.1    派生对象的基类的指针和引用</p>
-<p>12.2    虚函数和多态</p>
-<p>12.2A   override和final操作符，协变返回类型</p>
-<p>12.3    Virtual destructors, virtual assignment, and overriding virtualization</p>
-<p>12.4    Early binding and late binding</p>
-<p>12.5    The virtual table</p>
-<p>12.6    纯虚函数，抽象基类和接口类</p>
-<p>12.7    虚拟基类</p>
-<p>12.8    对象切片</p>
-<p>12.9    动态转换</p>
-<p>12.10   使用&lt;&lt;输出继承的类</p>
-<p>12.x    第12章综合测验</p>
-<h3 id="第13章-模板"><a href="#第13章-模板" class="headerlink" title="第13章   模板"></a>第13章   模板</h3><p>13.1    函数模板</p>
-<p>13.2    函数模板实例</p>
-<p>13.3    模板类</p>
-<p>13.4    模板非类型参数</p>
-<p>13.5    函数模板特殊化</p>
-<p>13.6    类模板特殊化</p>
-<p>13.7    部分模板特殊化</p>
-<p>13.8    指针的部分模板特化</p>
-<p>13.x    第13章综合测验</p>
-<h3 id="第14章-异常"><a href="#第14章-异常" class="headerlink" title="第14章   异常"></a>第14章   异常</h3><p>14.1    异常介绍</p>
-<p>14.2    基本异常处理</p>
-<p>14.3    异常，函数和堆栈展开</p>
-<p>14.4    未捕获的异常，catch-all处理程序和异常修饰符</p>
-<p>14.5    异常，类和继承</p>
-<p>14.6    重新抛出异常</p>
-<p>14.7    函数try blocks</p>
-<p>14.8    例外的危险性和缺点</p>
-<p>14.x    第14章综合测验</p>
-<h3 id="第15章-移动语义和智能指针"><a href="#第15章-移动语义和智能指针" class="headerlink" title="第15章   移动语义和智能指针"></a>第15章   移动语义和智能指针</h3><p>15.1    介绍智能指针和移动语义</p>
-<p>15.2    <a href="https://learncpp-cn.github.io/cpp/96d9fb0d">右值引用</a></p>
-<p>15.3    移动构造函数并移动赋值</p>
-<p>15.4    std::move</p>
-<p>15.5    std::unique_ptr</p>
-<p>15.6    std::shared_ptr</p>
-<p>15.7    std::shared_ptr和std::weak_ptr的循环依赖问题</p>
-<p>15.x第15章综合回顾</p>
-<h3 id="第16章-标准模板库"><a href="#第16章-标准模板库" class="headerlink" title="第16章   标准模板库"></a>第16章   标准模板库</h3><p>16.1    标准库</p>
-<p>16.2    STL容器概述</p>
-<p>16.3    STL迭代器概述</p>
-<p>16.4    STL算法概述</p>
-<h3 id="第17章-std-string"><a href="#第17章-std-string" class="headerlink" title="第17章   std::string"></a>第17章   std::string</h3><p>17.1    std::string和std::wstring</p>
-<p>17.2    std::string构造和销毁</p>
-<p>17.3    std::string长度和容量</p>
-<p>17.4    std::string字符访问和转换为C风格的数组</p>
-<p>17.5    std::string赋值和交换</p>
-<p>17.6    std::string追加</p>
-<p>17.7    std::string插入</p>
-<h3 id="第18章-输入输出（I-O）"><a href="#第18章-输入输出（I-O）" class="headerlink" title="第18章 输入输出（I/O）"></a>第18章 输入输出（I/O）</h3><p>18.1    输入和输出（I/O）流</p>
-<p>18.2    用istream输入</p>
-<p>18.3    用ostream和ios输出</p>
-<p>18.4    字符串的stream类</p>
-<p>18.5    流状态和输入验证</p>
-<p>18.6    基本文件I/O.</p>
-<p>18.7    随机文件I/O.</p>
+          <h2 class="post-title" itemprop="name headline">介绍C++开发
 
+              
+            
+          </h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-07 15:24:53" itemprop="dateCreated datePublished" datetime="2019-02-07T15:24:53+08:00">2019-02-07</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">4 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>在我们编写和执行第一个C++程序之前，我们需要更详细地了解一个C++程序是怎么被开发出来的。看下图：</p>
+<p><img src="https://www.learncpp.com/images/CppTutorial/Chapter0/Development-min.png" alt="软件开发过程"></p>
+<h3 id="第1步：定义您要解决的问题。"><a href="#第1步：定义您要解决的问题。" class="headerlink" title="第1步：定义您要解决的问题。"></a>第1步：定义您要解决的问题。</h3><p>这是“做什么”的阶段，在这个阶段你需要找出你要解决的问题。定义你想要编写什么样的程序或许是最简单的一步，但也可能是最难的一步。但从概念上讲，它是最简单的。您只需要有一个深思熟虑的想法，你就可以进行下一步了。</p>
+<p>这里有一些例子：</p>
+<p>“我想编写一个程序，允许我输入许多数字，然后计算平均值。”<br>“我想写一个生成2d迷宫的程序，让用户浏览它。如果用户到达目的地，用户将获胜。“<br>“我想写一个程序，读取股票价格文件并预测股票是涨还是跌。”</p>
+<h3 id="第2步：确定如何解决问题。"><a href="#第2步：确定如何解决问题。" class="headerlink" title="第2步：确定如何解决问题。"></a>第2步：确定如何解决问题。</h3><p>这是“怎么做”的阶段，你要在这个阶段决定用什么样的方式来解决第一阶段所提出的问题。这也是软件开发中最容易忽略的步骤。问题的关键在于有很多方法可以解决问题 – 但是，其中一些方法很好，其中一些方法却很烂。通常，程序员会一下子就想出一个解决方案，然后屁股一坐，就开始写代码。这种情况下通常会产出比较烂的解决方案。</p>
+<p>通常，良好的解决方案具有以下特征：</p>
+<ul>
+<li>它们很简单（不会过于复杂或令人困惑）。</li>
+<li>它们有很好说明（特别是在提出任何假设或限制时）。</li>
+<li>它们是模块化构建的，因此可以在以后重复使用或更改，且不会影响程序的其他部分。</li>
+<li>它们非常稳健，可以在出现意外情况时容易修复或提供有用的错误消息。</li>
+</ul>
+<p>当你脑袋一热，屁股一坐，然后立即开始写代码时，你通常思考的是“我想做这个”，因此你使用最快的实现方式来达成你想要的效果，然而这可能导致程序的健壮性非常脆弱，以后难以更改或扩展，或者存在大量Bug（技术缺陷）。</p>
+<pre><code>作为旁白...
+
+术语Bug最早是由托马斯·爱迪生早在19世纪70年代提出！然而，该术语在20世纪40年代普及，当时工程师发现一只飞蛾卡在早期计算机的硬件中，导致短路。当时的错误报告和“飞蛾”实体现在都还在美国Smithsonian历史博物馆存放着。
+</code></pre><p>研究表明，程序员只有20％的时间用于编写初始程序。另外80％用于维护，包括调试（删除错误），针对新需求进行更改（例如，在新的操作系统版本上运行），增强功能（用于改进可用性或功能的微小更改），或者内部改进（提高可靠性或可维护性）。</p>
+<p>因此，你有必要在开始写代码前，花更多的时间去思考解决问题的最佳方法，提出更多的假设，以及未日后的维护做好计划，这样可以一路上节约你很多的时间，记住，<strong>思考两次，编码一次！</strong></p>
+<p>我们会在今后的课程更多地讨论如何有效地设计问题的解决方案。</p>
+<h3 id="第3步：编写程序"><a href="#第3步：编写程序" class="headerlink" title="第3步：编写程序"></a>第3步：编写程序</h3><p>为了编写程序，我们需要两件事：首先我们需要编程语言的知识 – 这就是这些教程的用途！其次，我们需要一个代码编辑器。可以使用您想要的任何代码编辑器编写程序，甚至用windows系统的记事本或者Unix的vi都行。但是，我们强烈建议您使用专为写代码而设计的编辑器。如果你还没有，请不要担心。我们将简要介绍如何安装代码编辑器。</p>
+<p>专为写代码而设计的编辑器具有一些使编程更容易的功能，包括：</p>
+<p>1）行号。当编译器给我们一个错误时，行号很有用，因为一般的编译器报错会像这样：<em>错误代码/错误消息，第64行</em>。如果没有显示行号的编辑器，你要找第64行可能只有一行一行慢慢数了。</p>
+<p>2）语法高亮和着色。语法高亮和着色会更改程序各个部分的颜色，以便更容易识别程序的不同组件。这是一个包含行号和语法高亮的C++程序示例（来自译者:我还不知道怎么通过markdown显示行号…）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line"> </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    std::cout &lt;&lt; &quot;Colored text!&quot;;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们在本教程中展示的示例将始终具有行编号和语法突出显示，好让它更容易看懂。</p>
+<p>3）明确的字体。非编程字体通常使得难以区分数字0和字母O，或数字1，字母l（小写字母L）和字母I（大写字母i）。一个好的编程字体将区分这些符号，以确保不会意外地使用一个符号代替另一个符号。</p>
+<p>在C++中，您的程序通常称为name.cpp，其中name替换为您为程序选择的名称（例如计算器，hello等等）。.cpp扩展则告诉您这是一个包含C++指令的C++源代码文件。请注意，有些人使用扩展名.cc而不是.cpp，但我们建议您使用.cpp。</p>
+<pre><code>最佳实践
+
+将您的代码文件命名为name.cpp，其中name是您选择的名称，.cpp是指示该文件是C++源文件的扩展名。
+</code></pre><p>另请注意，许多复杂的C++程序都有多个.cpp文件。在学习初期您一般用到一个.cpp文件就够了，但你需要知道的是，一个程序很有可能会有成百上千的.cpp文件（来自译者:比如虚幻引擎源代码,WTF!）</p>
+<p>一旦我们编写了程序，接下来的步骤就是将它转换成我们可以运行的东西，然后看它是否有效！我们将在下一节中讨论这些（4到7）步骤。</p>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/cpp/a5c6b875/" rel="prev" title="介绍C和C++语言">
+                介绍C和C++语言 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -734,7 +655,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第0章-简介-入门"><span class="nav-number">1.</span> <span class="nav-text">第0章 简介/入门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第1章-C-基础知识"><span class="nav-number">2.</span> <span class="nav-text">第1章 C++基础知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第2章-变量和基本数据类型"><span class="nav-number">3.</span> <span class="nav-text">第2章 变量和基本数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第3章-操作符"><span class="nav-number">4.</span> <span class="nav-text">第3章 操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第4章-可变范围和更多类型"><span class="nav-number">5.</span> <span class="nav-text">第4章 可变范围和更多类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第5章-控制流"><span class="nav-number">6.</span> <span class="nav-text">第5章 控制流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第6章-数组，字符串，指针和引用"><span class="nav-number">7.</span> <span class="nav-text">第6章 数组，字符串，指针和引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第7章-函数"><span class="nav-number">8.</span> <span class="nav-text">第7章 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第8章-基本的面向对象编程"><span class="nav-number">9.</span> <span class="nav-text">第8章 基本的面向对象编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第9章-运算符重载"><span class="nav-number">10.</span> <span class="nav-text">第9章 运算符重载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第10章-对象关系的介绍"><span class="nav-number">11.</span> <span class="nav-text">第10章 对象关系的介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第11章-继承"><span class="nav-number">12.</span> <span class="nav-text">第11章 继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第12章-虚函数"><span class="nav-number">13.</span> <span class="nav-text">第12章  虚函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第13章-模板"><span class="nav-number">14.</span> <span class="nav-text">第13章   模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第14章-异常"><span class="nav-number">15.</span> <span class="nav-text">第14章   异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第15章-移动语义和智能指针"><span class="nav-number">16.</span> <span class="nav-text">第15章   移动语义和智能指针</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第16章-标准模板库"><span class="nav-number">17.</span> <span class="nav-text">第16章   标准模板库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第17章-std-string"><span class="nav-number">18.</span> <span class="nav-text">第17章   std::string</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第18章-输入输出（I-O）"><span class="nav-number">19.</span> <span class="nav-text">第18章 输入输出（I/O）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第1步：定义您要解决的问题。"><span class="nav-number">1.</span> <span class="nav-text">第1步：定义您要解决的问题。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第2步：确定如何解决问题。"><span class="nav-number">2.</span> <span class="nav-text">第2步：确定如何解决问题。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第3步：编写程序"><span class="nav-number">3.</span> <span class="nav-text">第3步：编写程序</span></a></li></ol></div>
             
 
           </div>

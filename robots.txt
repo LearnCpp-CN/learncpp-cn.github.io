@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /posts/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://luochuanyuewu.com/sitemap.xml
+Sitemap: http://luochuanyuewu.com/baidusitemap.xml

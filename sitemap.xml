@@ -1,63 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-     <loc>https://learncpp-cn.github.io/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.1-Introduction to these tutorials/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.2-Introduction to programming languages/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.3-Introduction to C C++/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.4-Introduction to C++ development/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.5-Introduction to the compiler, linker, and libraries/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/0-Introduction&Getting Started/0.6-Installing an Integrated Development Environment (IDE)/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/1-C++ Basics/1.1-Structure of a program/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/7-Functions/7.5-Inline functions/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/8-Basic object-oriented programming/8.1-Welcome to object-oriented programming/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://learncpp-cn.github.io/8-Basic object-oriented programming/8.3-Public vs private access specifiers/</loc>
-     <lastmod>2019-01-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/96d9fb0d/</loc>
+    
+    <lastmod>2019-02-11T15:00:50.940Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/9783892c/</loc>
+    
+    <lastmod>2019-02-11T15:00:50.940Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/1ef7169f/</loc>
+    
+    <lastmod>2019-02-11T14:02:19.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/index.html</loc>
+    
+    <lastmod>2019-02-11T14:02:19.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/1ed2d910/</loc>
+    
+    <lastmod>2019-02-07T07:53:55.894Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/9b6d5a68/</loc>
+    
+    <lastmod>2019-02-07T07:53:53.090Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/2258fc9a/</loc>
+    
+    <lastmod>2019-02-07T07:49:09.092Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/f10c6aa3/</loc>
+    
+    <lastmod>2019-02-07T07:40:51.707Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/198adc04/</loc>
+    
+    <lastmod>2019-02-07T07:40:33.201Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/71fb958f/</loc>
+    
+    <lastmod>2019-02-07T07:40:31.489Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/fd9ffcf1/</loc>
+    
+    <lastmod>2019-02-07T07:26:22.755Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/a5c6b875/</loc>
+    
+    <lastmod>2019-02-07T07:24:53.235Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://learncpp-cn.github.io/cpp/46108864/</loc>
+    
+    <lastmod>2019-02-07T07:24:53.235Z</lastmod>
+    
+  </url>
+  
 </urlset>
